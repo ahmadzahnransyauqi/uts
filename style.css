@@ -1,0 +1,116 @@
+/* Reset default */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Background khusus per page */
+body.login-page {
+    background: url("bglogin.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+body.login-page::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+body.daftar-page {
+    background: url("bgdaftar.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+body.daftar-page::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+        padding: 20px 10px;
+    }
+}
+/* Container umum */
+.container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    width: 320px;
+    color: #fff;
+}
+
+/* Title */
+.container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+/* Label & input */
+.container label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.container input::placeholder {
+    color: #ddd;
+}
+
+/* Tombol */
+.container button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    background: #0056b3;
+}
+
+/* Link */
+.container .link {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.container .link a {
+    color: #ffda79;
+    text-decoration: none;
+}
+
+.container .link a:hover {
+    text-decoration: underline;
+}
