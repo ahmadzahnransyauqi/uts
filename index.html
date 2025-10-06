@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>UTS Project</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #333);
-      color: #fff;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .container {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-      backdrop-filter: blur(6px);
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 30px;
-      font-size: 14px;
-      color: #ccc;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 10px;
-      background: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Selamat Datang 👋</h1>
-    <p>Silakan pilih halaman yang ingin kamu buka</p>
-    <a href="login.html" class="btn">Login</a>
-    <a href="daftar.html" class="btn">Daftar</a>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roger Sumatera</title>
+    <link rel="icon" href="media/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="img-btn-group">
+        <input
+          type="checkbox"
+          id="burger-toggle"
+          class="burger-toggle"
+          hidden
+        />
+        <label for="burger-toggle" class="burger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <aside class="sidebar">
+          <ul class="nav-group sidebar-nav">
+            <li class="nav"><a href="#">Link 1</a></li>
+            <li class="nav"><a href="#">Link 2</a></li>
+            <li class="nav"><a href="#">Link 3</a></li>
+          </ul>
+        </aside>
+
+        <img src="media/images/logotext.png" alt="" class="logo-img" />
+      </div>
+      <div class="nav-container">
+        <ul class="nav-group">
+          <li class="nav"><a href="#">Link 1</a></li>
+          <li class="nav"><a href="#">Link 2</a></li>
+          <li class="nav"><a href="#">Link 3</a></li>
+        </ul>
+        <div class="sign-group">
+          <a href="pages/sign-in/login.html" class="login-btn">Login</a>
+          <a href="pages/sign-in/daftar.html" class="signup-btn">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero-section">
+      <h1 class="hero-title">Teach And Upgrade Your Body To Its <span> MAXIMUM </span> Potential</h1>
+      <div class="join-group">
+        <h2>Join Us</h2>
+        <div class="become-group">
+          <a href="#">Become a Member</a>
+          <a href="#">Become a Trainer</a>
+        </div>
+      </div>
+    </section>
+    <div class="mobile-join-group">
+        <h2>Join Us</h2>
+        <div class="become-group">
+          <a href="#">Become a Member</a>
+          <a href="#">Become a Trainer</a>
+        </div>
+      </div>
+  </body>
 </html>
-//sementara

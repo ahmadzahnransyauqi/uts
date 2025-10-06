@@ -12,7 +12,7 @@ body {
 
 /* Background khusus per page */
 body.login-page {
-    background: url("bglogin.jpg") no-repeat center center fixed;
+    background: url("../../media/images/bglogin.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 body.login-page::before {
@@ -25,7 +25,7 @@ body.login-page::before {
 }
 
 body.daftar-page {
-    background: url("bgdaftar.jpg") no-repeat center center fixed;
+    background: url("../../media/images/bgdaftar.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 body.daftar-page::before {
