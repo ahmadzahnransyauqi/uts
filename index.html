@@ -25,9 +25,11 @@
 
         <aside class="sidebar">
           <ul class="nav-group sidebar-nav">
-            <li class="nav"><a href="#">Link 1</a></li>
-            <li class="nav"><a href="#">Link 2</a></li>
-            <li class="nav"><a href="#">Link 3</a></li>
+            <li class="nav"><a href="#">About Us</a></li>
+            <li class="nav"><a href="#">Membership</a></li>
+            <li class="nav"><a href="#">Services</a></li>
+            <li class="nav"><a href="#">Jadwal</a></li>
+            <li class="nav"><a href="#">Contact</a></li>
           </ul>
         </aside>
 
@@ -35,12 +37,13 @@
       </div>
       <div class="nav-container">
         <ul class="nav-group">
-          <li class="nav"><a href="#">About Us</a></li>
-            <li class="nav"><a href="#">Membership</a></li>
-            <li class="nav"><a href="#">Service</a></li>
-            <li class="nav"><a href="#">Contact</a></li>
-            <li class="nav"><a href="#">Jadwal</a></li>
+          <li class="nav"><a href="#about">About Us</a></li>
+          <li class="nav"><a href="#membership">Membership</a></li>
+          <li class="nav"><a href="#services">Services</a></li>
+          <li class="nav"><a href="#jadwal">Jadwal</a></li>
+          <li class="nav"><a href="#contact">Contact</a></li>
         </ul>
+
         <div class="sign-group">
           <a href="pages/sign-in/login.html" class="login-btn">Login</a>
           <a href="pages/sign-in/daftar.html" class="signup-btn">Sign Up</a>
@@ -49,16 +52,27 @@
     </header>
 
     <!-- hero section -->
-    <section class="hero-section">
-      <h1 class="hero-title">Teach And Upgrade Your Body To Its <span> MAXIMUM </span> Potential</h1>
-      <div class="join-group">
-        <h2>Join Us</h2>
-        <div class="become-group">
-          <a href="#">Become a Member</a>
-          <a href="#">Become a Trainer</a>
-        </div>
+<section id="about" class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        Teach And Upgrade Your Body To Its <span>MAXIMUM</span> Potential
+      </h1>
+      <p class="hero-about">
+        Roger Sumatera adalah pusat kebugaran modern yang berfokus pada peningkatan performa tubuh secara maksimal.
+        Kami menyediakan pelatih profesional, fasilitas lengkap, dan komunitas positif untuk mendukung perjalanan fitnes Anda.
+      </p>
+    </div>
+
+    <div class="join-group">
+      <h2>Join Us</h2>
+      <div class="become-group">
+        <a href="#">Become a Member</a>
+        <a href="#">Become a Trainer</a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
     <div class="mobile-join-group">
         <h2>Join Us</h2>
         <div class="become-group">
@@ -66,6 +80,159 @@
           <a href="#">Become a Trainer</a>
         </div>
       </div>
+
+<section id="membership" class="membership-section">
+  <h2>Membership Plans</h2>
+  <div class="membership-grid">
+
+    <div class="membership-card">
+      <h3>Basic</h3>
+      <p class="price">Rp150.000 / bulan</p>
+      <ul>
+        <li>Akses gym reguler</li>
+        <li>1x konsultasi pelatih</li>
+        <li>Locker umum</li>
+      </ul>
+      <button>Pilih Paket</button>
+    </div>
+
+    <div class="membership-card highlight">
+      <h3>Premium</h3>
+      <p class="price">Rp300.000 / bulan</p>
+      <ul>
+        <li>Akses gym penuh</li>
+        <li>4x sesi personal trainer</li>
+        <li>Akses kelas group</li>
+        <li>Locker pribadi</li>
+      </ul>
+      <button>Pilih Paket</button>
+    </div>
+
+    <div class="membership-card">
+      <h3>Elite</h3>
+      <p class="price">Rp500.000 / bulan</p>
+      <ul>
+        <li>Akses 24 jam</li>
+        <li>8x sesi personal trainer</li>
+        <li>Body assessment bulanan</li>
+        <li>Free merchandise</li>
+      </ul>
+      <button>Pilih Paket</button>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services-section"> 
+  <h2>Our Services</h2>
+  <div class="services-grid"> 
+    <div class="service-card" style="background-image: url('media/images/service-training.jpg');">
+      <div class="overlay"></div>
+      <h3>Personal Training</h3>
+      <p>Latihan pribadi bersama pelatih profesional untuk hasil maksimal.</p>
+    </div>
+
+    <div class="service-card" style="background-image: url('media/images/service-group.jpg');">
+      <div class="overlay"></div>
+      <h3>Group Classes</h3>
+      <p>Ikuti kelas kelompok seru seperti Zumba, Yoga, dan HIIT.</p>
+    </div>
+
+    <div class="service-card" style="background-image: url('media/images/service-nutrition.png');">
+      <div class="overlay"></div>
+      <h3>Nutrition Guidance</h3>
+      <p>Konsultasi nutrisi untuk mendukung hasil latihan dan gaya hidup sehat.</p>
+    </div>
+
+    <div class="service-card" style="background-image: url('media/images/service-assesment.png');">
+      <div class="overlay"></div>
+      <h3>Body Assessment</h3>
+      <p>Evaluasi tubuh secara berkala untuk memantau progres kebugaranmu.</p>
+    </div>
+
+    <div class="service-card" style="background-image: url('media/images/martial-art.jpg');">
+      <div class="overlay"></div>
+      <h3>Martial Arts</h3>
+      <p>Pelatihan seni bela diri untuk meningkatkan keterampilan dan disiplin diri.</p>
+    </div>
+  </div>
+</section>
+
+<section id="jadwal" class="schedule-section">
+  <h2>Jadwal Latihan</h2>
+  <p class="schedule-desc">
+    Berikut jadwal kegiatan untuk tiap layanan kami. Jadwal ini bersifat sementara dan dapat berubah sewaktu-waktu.
+  </p>
+
+  <div class="schedule-grid">
+
+    <div class="schedule-card">
+      <h3>Personal Training</h3>
+      <ul>
+        <li>Senin - Jumat: 13.00 - 20.00</li>
+        <li>Sabtu: 10.00 - 18.00</li>
+        <li>Minggu: Libur</li>
+      </ul>
+    </div>
+
+    <div class="schedule-card">
+      <h3>Group Classes</h3>
+      <ul>
+        <li>Senin - Kamis: 15.00 - 21.00</li>
+        <li>Sabtu: 09.00 - 14.00</li>
+        <li>Minggu: 10.00 - 13.00</li>
+      </ul>
+    </div>
+
+    <div class="schedule-card">
+      <h3>Nutrition Guidance</h3>
+      <ul>
+        <li>Selasa - Jumat: 12.00 - 19.00</li>
+        <li>Sabtu: 11.00 - 15.00</li>
+        <li>Minggu: Libur</li>
+      </ul>
+    </div>
+
+    <div class="schedule-card">
+      <h3>Body Assessment</h3>
+      <ul>
+        <li>Senin - Kamis: 14.00 - 20.00</li>
+        <li>Sabtu: 09.00 - 13.00</li>
+        <li>Minggu: Libur</li>
+      </ul>
+    </div>
+
+    <div class="schedule-card">
+      <h3>Martial Arts</h3>
+      <ul>
+        <li>Selasa - Jumat: 17.00 - 21.00</li>
+        <li>Sabtu: 15.00 - 20.00</li>
+        <li>Minggu: 16.00 - 19.00</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contact" class="footer-contact">
+  <div class="footer-container">
+    <div class="footer-item">
+      <span class="icon">📍</span>
+      <p>Jl. Merdeka No. 123, Jakarta</p>
+    </div>
+    <div class="footer-item">
+      <span class="icon">✉️</span>
+      <p>gymcenter@email.com</p>
+    </div>
+    <div class="footer-item">
+      <span class="icon">💬</span>
+      <p>+62 812-3456-7890</p>
+    </div>
+    <div class="footer-item">
+      <span class="icon">📸</span>
+      <p>@gymcenter.official</p>
+    </div>
+  </div>
+  <p class="footer-credit">© 2025 Gym Center. All rights reserved.</p>
+</footer>
   </body>
 </html>
-//sementara appppppp
