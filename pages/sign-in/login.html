@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
   <link rel="stylesheet" href="../../styles/sign-in/daftar-dan-login.css">
 </head>
 <body class="login-page">
   <div class="container">
     <h2>Login</h2>
-    <form>
+
+    <div class="role-toggle">
+      <button type="button" id="userBtn" class="active" onclick="setRole('user')">User</button>
+      <button type="button" id="adminBtn" onclick="setRole('admin')">Admin</button>
+    </div>
+
+    <form id="loginForm">
       <label for="username">Username</label>
-      <input type="text" id="username" placeholder="Masukkan username" required>
+      <input type="text" id="username" placeholder="Masukkan username" required />
 
       <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Masukkan password" required>
+      <input type="password" id="password" placeholder="Masukkan password" required />
 
-      <button type="button" onclick="window.location.href='index.html'">Login</button>
+      <button type="submit">Login</button>
     </form>
+
     <div class="link">
-      <p>Belum punya akun? <a href="../../pages/sign-in/daftar.html">Daftar</a></p>
+      <p>Belum punya akun? <a href="daftar.html">Daftar</a></p>
     </div>
   </div>
+
+  <script>
+    let role = "user";
+
+    function setRole(selectedRole) {
+      role = selectedRole;
+      document.getElementById("userBtn").classList.toggle("active", role === "user");
+      document.getElementById("adminBtn").classList.toggle("active", role === "admin");
+    }
+
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault(); 
+     
+      if (role === "admin") {
+      
+        window.location.href = "../../pages/sign-in/index_admin.html";
+     } else {
+      
+        window.location.href = "index.html";
+      }
+    });
+  </script>
 </body>
 </html>
 
