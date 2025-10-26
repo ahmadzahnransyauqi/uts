@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Area - Roger Sumatera</title>
+  <link rel="stylesheet" href="style-index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logotext.png" alt="Roger Sumatera Logo" class="logo" />
+      <p class="tagline">One Team, One Power, One Roger Sumatera.</p>
+    </div>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="membership.html">Membership</a>
+      <a href="progress.html">Progress</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="member-container">
+    <div class="member-header">
+      <h1>Member Dashboard</h1>
+      <p>Selamat datang di Roger Sumatera Fitness Center 💪</p>
+    </div>
+
+    <div class="profile-section dashboard-card">
+      <img src="foto.jpg" alt="Profile Photo" />
+      <div class="profile-info">
+        <h2 id="member-name">Muaz Alfattah Fadhani</h2>
+        <p id="member-email">Email: muazalfattah@gmail.com</p>
+        <p id="member-date">Member Sejak: Jan 2025</p>
+      </div>
+    </div>
+
+    <div class="package-card dashboard-card">
+      <h3>Paket Aktif: <span id="member-package">Premium Membership</span></h3>
+      <p>Akses: Gym + Sauna + Personal Trainer</p>
+      <p>Berlaku sampai: <span id="member-expiry">25 Desember 2025</span></p>
+    </div>
+
+    <div class="barcode-section dashboard-card">
+      <h3>Barcode Absen Digital</h3>
+      <img id="barcode-img" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=RogerSumatera12345" alt="Member QR Code">
+      <p>Scan barcode ini di meja resepsionis untuk absen masuk</p>
+    </div>
+
+    <div class="motivation dashboard-card" id="motivation-text">
+      “Discipline is the bridge between goals and success.”
+    </div>
+
+    <a href="index.html" class="logout-btn dashboard-card">Logout</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p>📍 Jl. Merdeka No. 123, Medan</p>
+      <p>✉️ rogersumatera@gmail.com</p>
+      <p>💬 +62 812-3456-7890</p>
+      <p>📸 @rogersumatera.official</p>
+    </div>
+    <p class="footer-copy">© 2025 Roger Sumatera Fitness Center. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="active.js"></script>
+</body>
+</html>
