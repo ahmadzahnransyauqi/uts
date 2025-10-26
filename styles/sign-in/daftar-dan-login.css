@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -36,13 +36,8 @@ body.daftar-page::before {
     background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
-@media (max-width: 400px) {
-    .container {
-        width: 95%;
-        padding: 20px 10px;
-    }
-}
-/* Container umum */
+
+/* Container utama */
 .container {
     position: relative;
     z-index: 1;
@@ -53,6 +48,19 @@ body.daftar-page::before {
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     width: 320px;
     color: #fff;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Animasi masuk */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Title */
@@ -60,6 +68,35 @@ body.daftar-page::before {
     text-align: center;
     margin-bottom: 24px;
     color: #fff;
+}
+
+/* Toggle role (User / Admin) */
+.role-toggle {
+    display: flex;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.role-toggle button {
+    flex: 1;
+    padding: 0.7rem;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.role-toggle button.active {
+    background: rgba(255, 255, 255, 0.3);
+    color: #e6d00e;
+}
+
+.role-toggle button:hover {
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /* Label & input */
@@ -73,9 +110,9 @@ body.daftar-page::before {
     width: 100%;
     padding: 10px;
     margin-bottom: 16px;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 6px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.15);
     color: #fff;
 }
 
@@ -83,11 +120,11 @@ body.daftar-page::before {
     color: #ddd;
 }
 
-/* Tombol */
-.container button {
+/* Tombol utama */
+.container button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background: #007bff;
+    background: #e6d00e;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -96,8 +133,8 @@ body.daftar-page::before {
     transition: 0.3s;
 }
 
-.container button:hover {
-    background: #0056b3;
+.container button[type="submit"]:hover {
+    background: #e6d00e;
 }
 
 /* Link */
@@ -113,4 +150,12 @@ body.daftar-page::before {
 
 .container .link a:hover {
     text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+        padding: 20px 10px;
+    }
 }
