@@ -1,0 +1,252 @@
+/* ===== RESET & FONT ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  background: url("images (1).jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(80, 0, 0, 0.6)
+  );
+  backdrop-filter: blur(4px);
+  z-index: -1;
+}
+
+/* ===== HEADER (Tidak berubah) ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px 40px;
+  border-bottom: 2px solid #ff2c2c;
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.3);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.tagline {
+  color: #ff2c2c;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 44, 44, 0.7);
+  letter-spacing: 1px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.nav-menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ff2c2c;
+}
+
+/* ===== MEMBER CONTAINER (DIUBAH) ===== */
+.member-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  /* Dibuat jadi grid agar spasi antar kartu otomatis */
+  display: grid;
+  gap: 20px; 
+  /* Semua style kaca dipindahkan ke kartu di dalamnya */
+}
+
+.member-header {
+  text-align: center;
+  margin-bottom: 20px; /* Dikurangi dari 30px */
+}
+
+.member-header h1 {
+  font-size: 2.2rem; /* Sedikit lebih besar */
+  color: #ff2c2c;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== SEMUA KARTU DASHBOARD (DIUBAH) ===== */
+.profile-section,
+.package-card,
+.barcode-section,
+.motivation {
+  /* Style "kaca buram" (glassmorphism) */
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 44, 44, 0.5);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(255, 44, 44, 0.2);
+  
+  /* Persiapan Animasi JS */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* ===== PROFILE SECTION (DISESUAIKAN) ===== */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Hapus background, border, shadow (sudah di atas) */
+}
+
+.profile-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ff2c2c;
+  background: #111;
+}
+
+.profile-info h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.profile-info p {
+  color: #bbb;
+  margin: 5px 0;
+}
+
+/* ===== PACKAGE CARD (DISESUAIKAN) ===== */
+.package-card {
+  /* margin-top: 30px; */ /* Tidak perlu lagi karena ada grid-gap */
+  /* Ganti border hijau ke merah */
+  border-left: 5px solid #ff2c2c;
+}
+
+/* Ganti warna span hijau ke merah */
+#member-package {
+  color: #ff2c2c !important; /* Pakai !important untuk override inline style lama (jika ada) */
+  font-weight: 600;
+}
+
+/* ===== BARCODE SECTION (DISESUAIKAN) ===== */
+.barcode-section {
+  text-align: center;
+  /* margin: 30px 0; */ /* Tidak perlu lagi */
+}
+
+.barcode-section img {
+  width: 180px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* ===== MOTIVATION (DISESUAIKAN) ===== */
+.motivation {
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  /* Ganti warna kuning ke merah */
+  color: #ff2c2c; 
+  font-weight: 500;
+  /* margin-top: 20px; */ /* Tidak perlu lagi */
+}
+
+/* ===== LOGOUT BUTTON (DISESUAIKAN) ===== */
+.logout-btn {
+  display: block;
+  text-align: center;
+  background: #ff2c2c;
+  color: white;
+  text-decoration: none;
+  padding: 12px; /* Sedikit lebih tebal */
+  border-radius: 10px;
+  /* margin-top: 20px; */ /* Tidak perlu lagi */
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 1.1rem;
+  
+  /* Persiapan Animasi JS */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, 
+              background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #e60000;
+  transform: scale(1.02); /* Efek hover lebih halus */
+}
+
+/* ===== FOOTER (Tidak berubah) ===== */
+.footer {
+  background: #000;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 2px solid #ff2c2c;
+  margin-top: 50px;
+  color: #ddd;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.footer-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.footer-info p:hover {
+  color: #ff2c2c;
+  transform: scale(1.05);
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* ===== GAYA NAVIGASI AKTIF ===== */
+.nav-menu a.active {
+  color: #ff2c2c; /* Warna merah tema Anda */
+  font-weight: 700; /* Dibuat tebal agar lebih menonjol */
+}
