@@ -30,17 +30,15 @@
 
   <script>
     document.getElementById("daftarForm").addEventListener("submit", function (e) {
-      e.preventDefault(); // Mencegah form submit dan reload halaman
+      e.preventDefault();
 
       const password = document.getElementById("password").value;
       const confirmPassword = document.getElementById("confirm-password").value;
 
-      // Cek apakah password dan konfirmasi password sama
       if (password !== confirmPassword) {
         alert("Password dan Konfirmasi Password tidak cocok!");
       } else {
-        // Jika cocok (dan 'required' sudah memastikan tidak kosong)
-        // Tampilkan pesan sukses dan arahkan ke halaman login
+   
         alert("Daftar berhasil! Silakan login.");
         window.location.href = "../../pages/sign-in/login.html";
       }
