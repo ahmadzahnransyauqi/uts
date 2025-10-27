@@ -1,4 +1,3 @@
-/* Reset default */
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@ body {
     position: relative;
 }
 
-/* Background khusus per page */
+
 body.login-page {
     background: url("../../media/images/bglogin.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -37,7 +36,6 @@ body.daftar-page::before {
     z-index: 0;
 }
 
-/* Container utama */
 .container {
     position: relative;
     z-index: 1;
@@ -51,7 +49,6 @@ body.daftar-page::before {
     animation: fadeIn 0.6s ease-in-out;
 }
 
-/* Animasi masuk */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -63,14 +60,12 @@ body.daftar-page::before {
     }
 }
 
-/* Title */
 .container h2 {
     text-align: center;
     margin-bottom: 24px;
     color: #fff;
 }
 
-/* Toggle role (User / Admin) */
 .role-toggle {
     display: flex;
     background: rgba(255, 255, 255, 0.15);
@@ -99,7 +94,7 @@ body.daftar-page::before {
     background: rgba(255, 255, 255, 0.25);
 }
 
-/* Label & input */
+
 .container label {
     font-size: 14px;
     margin-bottom: 6px;
@@ -120,7 +115,7 @@ body.daftar-page::before {
     color: #ddd;
 }
 
-/* Tombol utama */
+
 .container button[type="submit"] {
     width: 100%;
     padding: 12px;
@@ -137,7 +132,7 @@ body.daftar-page::before {
     background: #e6d00e;
 }
 
-/* Link */
+
 .container .link {
     text-align: center;
     margin-top: 12px;
@@ -152,7 +147,7 @@ body.daftar-page::before {
     text-decoration: underline;
 }
 
-/* Responsif */
+
 @media (max-width: 400px) {
     .container {
         width: 95%;
