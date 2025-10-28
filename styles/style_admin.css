@@ -61,12 +61,21 @@ a:hover {
 }
 
 .logo-admin {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--text-light);
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 1px; */
+}
+
+.logo-admin .logo-img {
+    max-width: 100%; /* Pastikan gambar tidak melebihi lebar kontainernya */
+    /* height: 40px;    Atur tinggi gambar agar konsisten */
+    width: 180px;
+    display: block;  /* Menghapus spasi di bawah gambar (masalah umum dengan img) */
+    margin: 0 auto;  /* Pusatkan gambar di dalam kontainer jika lebih kecil dari 100% */
+    object-fit: contain; /* Memastikan seluruh logo terlihat tanpa terpotong */
 }
 
 .sidebar-nav ul {
@@ -317,23 +326,27 @@ a:hover {
 
 @media (max-width: 992px) {
     .sidebar {
-        width: 80px;
+        /* width: 80px;
         align-items: center;
         padding-left: 0;
-        padding-right: 0;
+        padding-right: 0; */
     }
     .sidebar-header {
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     .logo-admin {
-        font-size: 0;
+        /* font-size: 0;
         width: 40px;
         height: 40px;
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="%23ffc107" d="M371.7 207.3c-.7-.7-.9-1.8-.4-2.7l14.2-26.6c4.6-8.6 1.8-19-6.9-23.6s-19-1.8-23.6 6.9L326.6 195c-8.6 4.6-11.4 15-6.9 23.6s15 11.4 23.6 6.9l14.2-26.6zM288 0C129 0 0 119 0 265.5 0 404.9 108.3 512 288 512c151.7 0 288-107.7 288-246.5C576 119 447 0 288 0zM132.3 226.7c-8.6-4.6-11.4-15-6.9-23.6l14.2-26.6c4.6-8.6 15-11.4 23.6-6.9s11.4 15 6.9 23.6L155 220.1c-4.5 8.6-15 11.4-23.6 6.6zM288 448c-85 0-153.9-63.5-153.9-140.2 0-38.3 19.3-73.4 51.3-99.3 27.5-22 62.4-34.5 102.7-34.5s75.2 12.5 102.7 34.5c32 25.9 51.3 61 51.3 99.3C441.9 384.5 373 448 288 448z"/></svg>');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        text-indent: -9999px;
+        text-indent: -9999px; */
+    }
+    .logo-admin .logo-img {
+        width: 60px; /* Lebar yang lebih kecil saat sidebar menyusut */
+        height: 60px;
     }
     .sidebar-nav li a {
         padding: 12px 0;
@@ -371,7 +384,16 @@ a:hover {
         border-bottom: 1px solid var(--border-color);
     }
     .sidebar-header {
-        display: none;
+        display: block;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .sidebar-header .logo-img {
+        width: auto; /* Biarkan lebar mengikuti gambar asli */
+        max-width: 200px; /* Batasi agar tidak terlalu besar */
+        height: 50px; /* Tinggi yang konsisten */
     }
     .sidebar-nav ul {
         display: flex;
