@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 
   /* === Background foto gym === */
-  background: url("images (1).jpg") no-repeat center center fixed;
+  background: url("../../media/images/images (1).jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
@@ -253,4 +253,5 @@ body::before {
 .nav-menu a.active {
   color: #ff2c2c; /* Warna merah tema Anda */
   font-weight: 700; /* Dibuat tebal agar lebih menonjol */
+
 }
